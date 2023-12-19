@@ -5,14 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>OhMyFood</title>
+    <script src="https://kit.fontawesome.com/88f7d5a863.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="top-bar">
         <img class="top-bar__img" src="img/logo/ohmyfood.png" alt="Logo OhMyFood">
     </header>
     <main>
-        <input type="text" name="recherche" id="recherche" placeholder="Marseille, France">
-        <button class="btn">Explorer nos restaurants</button>
+        <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" name="recherche" class="location__input" placeholder="Paris, Belleville">
+        </div>
+        <div class="reservation" >
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <button class="btn">Explorer nos restaurants</button>
+        </div>
+        <div class="fonctionnement" >
+            <h2>Fonctionnement</h2>
+            <div class="container-fonc">
+                <div class="choice">
+                    <p class="choice__number" >1</p>
+                    <div class="choice__bloc" >
+                        <i class="fa-solid fa-mobile-screen-button choice__bloc--grey"></i>
+                        <p>Choisissez un restaurant</p>
+                    </div>
+                </div>
+                <div class="choice">
+                    <p class="choice__number " >1</p>
+                    <div class="choice__bloc" >
+                        <i class="fa-solid fa-list-ul choice__bloc--grey"></i>
+                        <p>Composez votre menu</p>
+                    </div>
+                </div>
+                <div class="choice">
+                    <p class="choice__number" >1</p>
+                    <div class="choice__bloc" >
+                        <i class="fa-solid fa-store choice__bloc--purple"></i>
+                        <p>Dégustez au restaurant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
 
