@@ -32,6 +32,10 @@ h2{
     margin: 0px;
 }
 
+p{
+    margin: 0px;
+}
+
 /* Composants */
 .btn{
     width: 218px;
@@ -47,6 +51,7 @@ h2{
 
 /* Header */
 .top-bar{
+    position: relative;
     background-color: white;
     width: 100%;
     height: 63px;
@@ -61,11 +66,10 @@ h2{
     }
 }
 
-/* Main */
 .location{
     width: 100%;
     height: 50px;
-    background-color: transparent;;
+    background-color: #eaeaea;
     display: flex;
     gap: 17px;
     justify-content: center;
@@ -108,7 +112,7 @@ h2{
 .fonctionnement{
     background-color: white;
     width: 100%;
-    padding-top: 48px;
+    padding: 48px 0px 60px 0px;
     .container-fonc{
         width: 100%;
         display: flex;
@@ -158,6 +162,46 @@ h2{
                 font-family: 'Roboto', sans-serif;
                 font-weight: 500;
             }
+        }
+    }
+}
+
+.restaurant{
+    padding: 54px 0px 66px 0px;
+    width: 100%;
+    .rest-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        .hide {
+            display: none;
+        }
+        &__link{
+            display: block;
+            width: 90%;
+            height: 251px;
+            background-color: #008766;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+        &__tag{
+            border-radius: 3px;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: $back-tag;
+            color: $font-tag;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            padding: 7px 9px 7px 9px;
+        }
+        &__img{
+            width: 100%;
+            height: 174px;
+            background-size: cover;
         }
     }
 }

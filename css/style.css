@@ -23,6 +23,10 @@ h2 {
   margin: 0px;
 }
 
+p {
+  margin: 0px;
+}
+
 /* Composants */
 .btn {
   width: 218px;
@@ -38,6 +42,7 @@ h2 {
 
 /* Header */
 .top-bar {
+  position: relative;
   background-color: white;
   width: 100%;
   height: 63px;
@@ -52,11 +57,10 @@ h2 {
   width: 162px;
 }
 
-/* Main */
 .location {
   width: 100%;
   height: 50px;
-  background-color: transparent;
+  background-color: #eaeaea;
   display: flex;
   gap: 17px;
   justify-content: center;
@@ -102,7 +106,7 @@ h2 {
 .fonctionnement {
   background-color: white;
   width: 100%;
-  padding-top: 48px;
+  padding: 48px 0px 60px 0px;
 }
 .fonctionnement .container-fonc {
   width: 100%;
@@ -154,4 +158,44 @@ h2 {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+}
+
+.restaurant {
+  padding: 54px 0px 66px 0px;
+  width: 100%;
+}
+.restaurant .rest-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.restaurant .rest-container .hide {
+  display: none;
+}
+.restaurant .rest-container__link {
+  display: block;
+  width: 90%;
+  height: 251px;
+  background-color: #008766;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.restaurant .rest-container__tag {
+  border-radius: 3px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99E2d0;
+  color: #008766;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding: 7px 9px 7px 9px;
+}
+.restaurant .rest-container__img {
+  width: 100%;
+  height: 174px;
+  background-size: cover;
 }
