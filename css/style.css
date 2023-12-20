@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
 /* Variables */
 /* Generique */
 body {
@@ -13,6 +13,7 @@ h1 {
   font-size: 24px;
   margin: 0px;
   padding: 39px 50px 0px 50px;
+  font-weight: 700;
 }
 
 h2 {
@@ -21,6 +22,15 @@ h2 {
   font-size: 24px;
   padding: 0px 0px 26px 20px;
   margin: 0px;
+  font-weight: 700;
+}
+
+h3 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 700;
 }
 
 p {
@@ -176,10 +186,11 @@ p {
   display: block;
   width: 90%;
   height: 251px;
-  background-color: #008766;
+  background-color: white;
   border-radius: 15px;
   overflow: hidden;
   position: relative;
+  text-decoration: none;
 }
 .restaurant .rest-container__tag {
   border-radius: 3px;
@@ -197,4 +208,18 @@ p {
   width: 100%;
   height: 174px;
   background-size: cover;
+}
+.restaurant .rest-container__text {
+  display: flex;
+  height: 72px;
+  padding: 0px 25px 0px 13px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurant .rest-container__text i {
+  font-size: 22px;
 }
