@@ -1,0 +1,135 @@
+@mixin font-roboto($size, $bold, $color: black) {
+    font-family: 'Roboto', sans-serif;
+    font-size: $size;
+    color: $color;
+    font-weight: $bold;
+}
+
+body{
+    background-color: white;
+}
+h1 {
+    margin: 0px;
+    padding: 0px;
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+
+.top-bar a{
+    position: absolute;
+    left: 17px;
+    color: #353535;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.image{
+    width: 100%;
+    height: 275px;
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.menu-container{
+    background-color: #f6f6f6;
+    min-height: 300px;
+    border-radius: 25px 25px 0px 0px;
+    padding: 32px 13px 40px 13px;
+    margin-top: -25px;
+    position: relative;
+    &__title{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    h2{
+        @include font-roboto(16px, 300);
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+.title-bar{
+    display: block;
+    background-color: #99E2D0;
+    margin-top: 4px;
+    width: 40px;
+    height: 3px;
+
+}
+
+.menu{
+    margin-top: 40px;
+}
+
+.card{
+    height: 69px;
+    margin-top: 12px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    align-items: center;
+    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
+    &__text{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        flex: 1;
+        padding-left: 15px;
+        & h3,p{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin: 0px;
+            padding: 0px;
+        }
+        & h3{
+            @include font-roboto(18px, 500);
+        }
+        & p{
+            @include font-roboto(15px, 300);
+        }
+    }
+    &__price{
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-left: 10px;
+        @include font-roboto(15px, 700);
+    }
+    &__valid{
+        position: relative;
+        height: 69px;
+        width: 0px;
+        line-height: 69px;
+        color: white;
+        font-size: 22px;
+        border-radius: 0px 15px 15px 0px;
+        transition: width 1s;
+        background-color: #99E2D0;
+        & i{
+            margin-left: 18.5px;
+        }
+    }
+    &:hover > .card__valid{
+        animation-duration: 300ms;
+        width: 59px;
+    }
+}
+
+/* Version Bureau */
+@media (min-width: 1100px) {
+    .menu-container{
+        width: 800px;
+        margin: auto;
+        margin-top: -25px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}

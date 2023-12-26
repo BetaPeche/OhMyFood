@@ -13,7 +13,6 @@ h1 {
   font-size: 24px;
   color: black;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
   margin: 0px;
   padding: 39px 50px 0px 50px;
 }
@@ -54,6 +53,26 @@ p {
   font-weight: 500;
 }
 
+.heart-bloc {
+  cursor: pointer;
+}
+.heart-bloc .heart-gradient {
+  display: none;
+}
+.heart-bloc i {
+  font-size: 22px;
+}
+.heart-bloc i.heart:active {
+  display: none;
+}
+.heart-bloc i.heart:active + .heart-gradient {
+  display: block;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
 /* Header */
 .top-bar {
   position: relative;
@@ -71,6 +90,7 @@ p {
   width: 162px;
 }
 
+/* Main */
 .location {
   width: 100%;
   height: 50px;
@@ -227,23 +247,8 @@ p {
   justify-content: space-between;
   align-items: center;
 }
-.restaurant .rest-container__text .heart-gradient {
-  display: none;
-}
-.restaurant .rest-container__text i {
-  font-size: 22px;
-}
-.restaurant .rest-container__text i.heart:active {
-  display: none;
-}
-.restaurant .rest-container__text i.heart:active + .heart-gradient {
-  display: block;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-}
 
+/* Footer */
 footer {
   background-color: #353535;
   padding: 22px 25px 22px 25px;
@@ -273,6 +278,7 @@ footer .footer__container .icon-text {
   font-weight: 500;
 }
 
+/* Version Bureau */
 @media (min-width: 1100px) {
   h1 {
     padding: 30px 0px 18px 0px;
