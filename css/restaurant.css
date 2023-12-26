@@ -73,6 +73,9 @@ h1 {
   overflow: hidden;
   align-items: center;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation-name: card-hide;
+  animation-fill-mode: forwards;
 }
 .card__text {
   display: flex;
@@ -131,6 +134,99 @@ h1 {
   width: 59px;
 }
 
+.anim--1 {
+  animation-delay: 111.1111111111ms;
+  animation-name: card-anim;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.anim--2 {
+  animation-delay: 222.2222222222ms;
+  animation-name: card-anim;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.anim--3 {
+  animation-delay: 333.3333333333ms;
+  animation-name: card-anim;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.anim--4 {
+  animation-delay: 444.4444444444ms;
+  animation-name: card-anim;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.anim--5 {
+  animation-delay: 555.5555555556ms;
+  animation-name: card-anim;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.anim--6 {
+  animation-delay: 666.6666666667ms;
+  animation-name: card-anim;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.anim--7 {
+  animation-delay: 777.7777777778ms;
+  animation-name: card-anim;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.anim--8 {
+  animation-delay: 888.8888888889ms;
+  animation-name: card-anim;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.anim--9 {
+  animation-delay: 1000ms;
+  animation-name: card-anim;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.anim--1 {
+  animation-name: card-anim;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes card-hide {
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  1% {
+    transform: translateX(3000px);
+  }
+  100% {
+    transform: translateX(3000px);
+  }
+}
+@keyframes card-anim {
+  0% {
+    transform: translateX(3000px);
+  }
+  99% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 .btn {
   margin-top: 40px;
 }
