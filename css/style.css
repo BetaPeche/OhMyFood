@@ -98,6 +98,7 @@ p {
 .heart-bloc:hover > .heart {
   opacity: 0;
   transition: opacity 300ms;
+  transition-delay: 700ms;
 }
 .heart-bloc:hover > .heart-gradient {
   opacity: 1;
@@ -106,8 +107,19 @@ p {
           background-clip: text;
   color: transparent;
   transition: opacity 500ms;
+  transform-origin: center bottom;
+  animation-name: anim-heart;
+  animation-duration: 1s;
 }
 
+@keyframes anim-heart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* Header */
 .loader {
   position: absolute;
