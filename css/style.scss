@@ -47,6 +47,7 @@ p{
 }
 
 /* Composants */
+
 .btn{
     width: 218px;
     height: 50px;
@@ -55,28 +56,104 @@ p{
     background: linear-gradient(#FF79DA, #9356DC);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     @include font-roboto(16px, 500, white);
+    display: block;
+    position: relative;
+    margin: auto;
+    z-index: 1;
+    &:hover {
+        cursor: pointer;
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content: "";
+        border-radius: 25px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 4px 10px 0px rgba(255, 255, 255, 0.2);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 300ms;
+    }
 }
 
 .heart-bloc{
+    width: 22px;
+    height: 22px;
+    font-size: 22px;
+    position: relative;
     cursor: pointer;
     .heart-gradient{
-        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
     }
-    i {
-        font-size: 22px;
-        &.heart:active{
-            display: none;
-        }
-        &.heart:active + .heart-gradient{
-            display: block;
-            background: linear-gradient(#9356DC, #FF79DA);
-            background-clip: text;
-            color: transparent;
-        }
+    .heart{
+        position: absolute;
+        top: 0px;
+        left: 0px;
     }
+    &:hover > .heart{
+        opacity: 0;
+        transition: opacity 300ms;
+    }
+    &:hover > .heart-gradient{
+        opacity: 1;
+        background: linear-gradient(#9356DC, #FF79DA);
+        background-clip: text;
+        color: transparent;
+        transition: opacity 500ms;
+    }
+    
 }
 
 /* Header */
+.loader{
+    position: absolute;
+    background-color: #353535;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 100;
+    opacity: 0;
+    animation-name: anim-loader;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes anim-loader {
+    0%{
+        opacity: 1;
+    }
+    10%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    99%{
+        width: 100vw;
+        height: 100vh;
+    }
+    100%{
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+}
+
 .top-bar{
     position: relative;
     background-color: white;

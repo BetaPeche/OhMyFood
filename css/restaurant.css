@@ -123,9 +123,16 @@ h1 {
 .card__valid i {
   margin-left: 18.5px;
 }
+.card:hover {
+  cursor: pointer;
+}
 .card:hover > .card__valid {
   animation-duration: 300ms;
   width: 59px;
+}
+
+.btn {
+  margin-top: 40px;
 }
 
 /* Version Bureau */
@@ -133,7 +140,7 @@ h1 {
   .menu-container {
     width: 635px;
     margin: auto;
-    margin-top: -25px;
+    margin-top: -28px;
     padding-left: 210px;
     padding-right: 210px;
   }
