@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
+@import url('keyframe.css');
+@import url('restaurant.css');
 
 /* Variables */
 
@@ -58,7 +60,8 @@ p{
     @include font-roboto(16px, 500, white);
     display: block;
     position: relative;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 1;
     &:hover {
         cursor: pointer;
@@ -75,7 +78,7 @@ p{
         bottom: 0;
         left: 0;
         background-color: rgba(255, 255, 255, 0.2);
-        box-shadow: 0px 4px 10px 0px rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
         opacity: 0;
         z-index: -1;
         transition: opacity 300ms;
@@ -116,17 +119,8 @@ p{
     }
     
 }
-@keyframes anim-heart {
-    0%{
-        transform: scale(0);
-    }
-    100%{
-        transform: scale(1);
-    }
-    
-}
 
-/* Header */
+/* Loader */
 .loader{
     position: absolute;
     background-color: #353535;
@@ -142,31 +136,32 @@ p{
     animation-name: anim-loader;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    &__title{
+        font-family: Shrikhand;
+        font-size: 70px;
+        font-weight: 400;
+        color: white;
+    }
+    &__anim{
+        width: 80px;
+        height: 80px;
+        border: 15px solid #FF79DA;
+        border-bottom-color: #9356DC;
+        border-radius: 50%;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+    }
 }
 
-
-
-@keyframes anim-loader {
-    0%{
-        opacity: 1;
-    }
-    10%{
-        opacity: 1;
-    }
-    80%{
-        opacity: 1;
-    }
-    99%{
-        width: 100vw;
-        height: 100vh;
-    }
-    100%{
-        opacity: 0;
-        width: 0px;
-        height: 0px;
-    }
-}
-
+/* Header */
 .top-bar{
     position: relative;
     background-color: white;
