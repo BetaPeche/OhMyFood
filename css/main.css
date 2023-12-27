@@ -369,8 +369,31 @@ footer .footer__container .icon-text a {
   font-weight: 500;
 }
 
+/* Version Tablette */
+@media (min-width: 768.1px) and (max-width: 1023.9px) {
+  .fonctionnement .container-fonc {
+    padding: 0px 80px 0px 80px;
+  }
+  .restaurant {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: auto;
+  }
+  .restaurant .rest-container {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 50px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .restaurant .rest-container__link {
+    width: 45.37%;
+  }
+}
 /* Version Bureau */
-@media (min-width: 1100px) {
+@media (min-width: 1024px) {
   h1 {
     padding: 30px 0px 18px 0px;
   }
@@ -413,12 +436,13 @@ footer .footer__container .icon-text a {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
     row-gap: 50px;
     -moz-column-gap: 100px;
          column-gap: 100px;
   }
   .restaurant .rest-container__link {
-    width: 45.37%;
+    width: 45%;
   }
   footer {
     padding: 60px 60px 30px 25px;
