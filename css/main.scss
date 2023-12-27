@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
 @import url('keyframe.css');
-@import url('restaurant.css');
 
 /* Variables */
 
@@ -340,9 +339,9 @@ footer{
             display: flex;
             align-items: center;
             gap: 11px;
-        & a{
-            font-weight: 500;
-        }
+            & a{
+                font-weight: 500;
+            }
         }
     }
 }

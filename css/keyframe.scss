@@ -58,6 +58,13 @@
 @keyframes card-anim {
     0%{
         transform: translateX(+3000px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    95%{
+        opacity: 0.5;
     }
     99%{
         transform: translateX(-5px);
