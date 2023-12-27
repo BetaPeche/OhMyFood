@@ -332,11 +332,17 @@ footer{
         flex-direction: column;
         gap: 7px;
         @include font-roboto(16px, 400, white);
+        & a{
+            @include font-roboto(16px, 400, white);
+            text-decoration: none;
+        }
         .icon-text{
             display: flex;
             align-items: center;
             gap: 11px;
+        & a{
             font-weight: 500;
+        }
         }
     }
 }
