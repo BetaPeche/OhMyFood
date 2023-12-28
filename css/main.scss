@@ -29,6 +29,9 @@ h1{
     @include font-roboto(24px, 700);
     margin: 0px;
     padding: 39px 50px 0px 50px;
+    &:hover{
+        cursor: default;
+    }
 }
 
 h2{
@@ -219,6 +222,9 @@ p{
         @include font-roboto(16px, 300, $back-footer);
         padding: 0px 30px 29px 30px;
         margin: 0px;
+        &:hover{
+            cursor: default;
+        }
     }
 }
 
@@ -236,6 +242,9 @@ p{
         position: relative;
         padding-left: 12px;
         width: 95%;
+        &:hover{
+            cursor: default;
+        }
         &__number{
             display: inline-block;
             margin: 0px;

@@ -17,6 +17,9 @@ h1 {
   margin: 0px;
   padding: 39px 50px 0px 50px;
 }
+h1:hover {
+  cursor: default;
+}
 
 h2 {
   font-family: "Roboto", sans-serif;
@@ -226,6 +229,9 @@ p {
   padding: 0px 30px 29px 30px;
   margin: 0px;
 }
+.reservation p:hover {
+  cursor: default;
+}
 
 .fonctionnement {
   background-color: white;
@@ -242,6 +248,9 @@ p {
   position: relative;
   padding-left: 12px;
   width: 95%;
+}
+.fonctionnement .choice:hover {
+  cursor: default;
 }
 .fonctionnement .choice__number {
   display: inline-block;
