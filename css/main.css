@@ -420,6 +420,7 @@ footer .footer__container .icon-text a {
   }
   .reservation p {
     padding: 0px 0px 18px 0px;
+    line-height: 46px;
   }
   .content {
     max-width: 1080px;
