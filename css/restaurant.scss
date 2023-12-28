@@ -96,6 +96,7 @@ h1 {
         }
         & h3{
             @include font-roboto(18px, 500);
+            padding-bottom: 5px;
         }
         & p{
             @include font-roboto(15px, 300);
@@ -103,7 +104,7 @@ h1 {
     }
     &__price{
         padding-right: 15px;
-        padding-top: 20px;
+        padding-top: 25px;
         padding-left: 10px;
         @include font-roboto(15px, 700);
     }
@@ -158,6 +159,9 @@ $anim-delay: 100ms;
 
 /* Version Bureau */
 @media (min-width: 1024px) {
+    .image{
+       height: 383px; 
+    }
     .menu-container{
         max-width: 635px;
         margin: auto;

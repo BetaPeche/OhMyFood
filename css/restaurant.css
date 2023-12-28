@@ -97,6 +97,7 @@ h1 {
   font-size: 18px;
   color: black;
   font-weight: 500;
+  padding-bottom: 5px;
 }
 .card__text p {
   font-family: "Roboto", sans-serif;
@@ -106,7 +107,7 @@ h1 {
 }
 .card__price {
   padding-right: 15px;
-  padding-top: 20px;
+  padding-top: 25px;
   padding-left: 10px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -221,6 +222,9 @@ h1 {
 }
 /* Version Bureau */
 @media (min-width: 1024px) {
+  .image {
+    height: 383px;
+  }
   .menu-container {
     max-width: 635px;
     margin: auto;
