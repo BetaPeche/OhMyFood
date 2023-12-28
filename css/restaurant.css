@@ -135,62 +135,69 @@ h1 {
 }
 
 .anim--1 {
-  animation-delay: 111.1111111111ms;
+  animation-delay: 100ms;
   animation-name: card-anim;
   animation-duration: 600ms;
   animation-fill-mode: forwards;
 }
 
 .anim--2 {
-  animation-delay: 222.2222222222ms;
+  animation-delay: 200ms;
   animation-name: card-anim;
   animation-duration: 600ms;
   animation-fill-mode: forwards;
 }
 
 .anim--3 {
-  animation-delay: 333.3333333333ms;
+  animation-delay: 300ms;
   animation-name: card-anim;
   animation-duration: 600ms;
   animation-fill-mode: forwards;
 }
 
 .anim--4 {
-  animation-delay: 444.4444444444ms;
+  animation-delay: 400ms;
   animation-name: card-anim;
   animation-duration: 600ms;
   animation-fill-mode: forwards;
 }
 
 .anim--5 {
-  animation-delay: 555.5555555556ms;
+  animation-delay: 500ms;
   animation-name: card-anim;
   animation-duration: 600ms;
   animation-fill-mode: forwards;
 }
 
 .anim--6 {
-  animation-delay: 666.6666666667ms;
+  animation-delay: 600ms;
   animation-name: card-anim;
   animation-duration: 600ms;
   animation-fill-mode: forwards;
 }
 
 .anim--7 {
-  animation-delay: 777.7777777778ms;
+  animation-delay: 700ms;
   animation-name: card-anim;
   animation-duration: 600ms;
   animation-fill-mode: forwards;
 }
 
 .anim--8 {
-  animation-delay: 888.8888888889ms;
+  animation-delay: 800ms;
   animation-name: card-anim;
   animation-duration: 600ms;
   animation-fill-mode: forwards;
 }
 
 .anim--9 {
+  animation-delay: 900ms;
+  animation-name: card-anim;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.anim--10 {
   animation-delay: 1000ms;
   animation-name: card-anim;
   animation-duration: 600ms;
