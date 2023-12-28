@@ -115,7 +115,7 @@ h1 {
         color: white;
         font-size: 22px;
         border-radius: 0px 15px 15px 0px;
-        transition: width 500ms;
+        transition: width 300ms;
         background-color: #99E2D0;
         & i{
             margin-left: 18.5px;
@@ -129,8 +129,7 @@ h1 {
     }
 }
 $num-card: 10;
-$anim-dur: 1000ms;
-$anim-delay: $anim-dur / $num-card;
+$anim-delay: 100ms;
 
 @for $i from 1 through $num-card {
     .anim--#{$i} {
@@ -139,11 +138,6 @@ $anim-delay: $anim-dur / $num-card;
         animation-duration: 600ms;
         animation-fill-mode: forwards;
      }
-}
-.anim--1{
-    animation-name: card-anim;
-    animation-duration: 600ms;
-    animation-fill-mode: forwards;
 }
 
 .btn{

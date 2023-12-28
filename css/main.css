@@ -100,7 +100,7 @@ p {
 .heart-bloc:hover > .heart {
   opacity: 0;
   transition: opacity 300ms;
-  transition-delay: 700ms;
+  transition-delay: 200ms;
 }
 .heart-bloc:hover > .heart-gradient {
   opacity: 1;
@@ -111,7 +111,7 @@ p {
   transition: opacity 500ms;
   transform-origin: center bottom;
   animation-name: anim-heart;
-  animation-duration: 1s;
+  animation-duration: 500ms;
 }
 .heart-bloc:not(:focus) > .heart-gradient {
   transition: opacity 500ms;

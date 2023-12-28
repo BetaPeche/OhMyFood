@@ -121,7 +121,7 @@ h1 {
   color: white;
   font-size: 22px;
   border-radius: 0px 15px 15px 0px;
-  transition: width 500ms;
+  transition: width 300ms;
   background-color: #99E2D0;
 }
 .card__valid i {
@@ -199,12 +199,6 @@ h1 {
 
 .anim--10 {
   animation-delay: 1000ms;
-  animation-name: card-anim;
-  animation-duration: 600ms;
-  animation-fill-mode: forwards;
-}
-
-.anim--1 {
   animation-name: card-anim;
   animation-duration: 600ms;
   animation-fill-mode: forwards;
