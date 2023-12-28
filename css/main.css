@@ -113,6 +113,13 @@ p {
   animation-name: anim-heart;
   animation-duration: 1s;
 }
+.heart-bloc:not(:focus) > .heart-gradient {
+  transition: opacity 500ms;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
 
 /* Loader */
 .loader {
