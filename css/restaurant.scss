@@ -130,7 +130,7 @@ h1 {
     }
 }
 $num-card: 10;
-$anim-delay: 100ms;
+$anim-delay: 200ms;
 
 @for $i from 1 through $num-card {
     .anim--#{$i} {
