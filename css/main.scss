@@ -98,6 +98,9 @@ p{
         top: 0px;
         left: 0px;
         opacity: 0;
+        background: linear-gradient(#9356DC, #FF79DA);
+        background-clip: text;
+        color: transparent;
     }
     .heart{
         position: absolute;
@@ -111,9 +114,6 @@ p{
     }
     &:hover > .heart-gradient{
         opacity: 1;
-        background: linear-gradient(#9356DC, #FF79DA);
-        background-clip: text;
-        color: transparent;
         transition: opacity 500ms;
         transform-origin: center bottom;
         animation-name: anim-heart;
@@ -121,9 +121,6 @@ p{
     }
     &:not(:focus) > .heart-gradient{
         transition: opacity 500ms;
-        background: linear-gradient(#9356DC, #FF79DA);
-        background-clip: text;
-        color: transparent;
     }
     
 }
